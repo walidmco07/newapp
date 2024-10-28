@@ -53,7 +53,7 @@ class AddEventController extends Controller
 
     public function resize(Request $request, $id)
     {
-        $schedule = Schedule::findOrFail($id);
+        $schedule = Schedule::findOrFail($id); 
 
         $newEndDate = Carbon::parse($request->input('end_date'))->setTimezone('UTC');
         $schedule->update(['end' => $newEndDate]);
