@@ -626,7 +626,7 @@ h6 {
   width: 300px;
   z-index: 996;
   transition: all 0.3s;
-  padding: 20px;
+  padding: 12px;
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: #aab7cf transparent;
@@ -768,10 +768,21 @@ h6 {
   color: #000000
 ;
   transition: 0.3;
-  padding: 10px 0 10px 40px;
+  padding: 10px 0 10px 16px;
   transition: 0.3s;
 }
 
+.sidebar-nav .nav-content1 a {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000000
+;
+  transition: 0.3;
+  padding: 10px 0 10px 0px;
+  transition: 0.3s;
+}
 .sidebar-nav .nav-content a i {
   font-size: 6px;
   margin-right: 8px;
