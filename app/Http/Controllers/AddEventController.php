@@ -3,17 +3,19 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Event;
+
 
 class AddEventController extends Controller
 {
     public function index()
     {
-        return view('schedule.index');
+        return view('addEvent');
     }
 
     public function create(Request $request)
     {
-        $item = new Schedule();
+        $item = new Event();
         $item->title = $request->title;
         $item->start = $request->start;
         $item->end = $request->end;
@@ -21,29 +23,30 @@ class AddEventController extends Controller
         $item->color = $request->color;
         $item->save();
 
-        return redirect('/fullcalender');
+        return redirect('/dashboard');
     }
 
 
     public function getEvents()
     {
-        $schedules = Schedule::all();
-        return response()->json($schedules);
+        $Events = Event::all();
+        return response()->json($Events);
     }
 
     public function deleteEvent($id)
     {
-        $schedule = Schedule::findOrFail($id);
-        $schedule->delete();
+        $Event = Event::findOrFail($id);
+        $Event->delete();
 
         return response()->json(['message' => 'Event deleted successfully']);
     }
 
     public function update(Request $request, $id)
     {
-        $schedule = Schedule::findOrFail($id);
+       
+        $Event = Event::findOrFail($id);
 
-        $schedule->update([
+        $Event->update([
             'start' => Carbon::parse($request->input('start_date'))->setTimezone('UTC'),
             'end' => Carbon::parse($request->input('end_date'))->setTimezone('UTC'),
         ]);
@@ -53,10 +56,10 @@ class AddEventController extends Controller
 
     public function resize(Request $request, $id)
     {
-        $schedule = Schedule::findOrFail($id); 
+        $Event = Event::findOrFail($id); 
 
         $newEndDate = Carbon::parse($request->input('end_date'))->setTimezone('UTC');
-        $schedule->update(['end' => $newEndDate]);
+        $Event->update(['end' => $newEndDate]);
 
         return response()->json(['message' => 'Event resized successfully.']);
     }
@@ -65,7 +68,7 @@ class AddEventController extends Controller
     {
         $searchKeywords = $request->input('title');
 
-        $matchingEvents = Schedule::where('title', 'like', '%' . $searchKeywords . '%')->get();
+        $matchingEvents = Event::where('title', 'like', '%' . $searchKeywords . '%')->get();
 
         return response()->json($matchingEvents);
     }

@@ -1,6 +1,6 @@
 <x-app-layout>
 
-@section('head')
+
     <style>
         form {
             width: 100%;
@@ -28,8 +28,8 @@
             color: white;
         }
     </style>
-@endsection
-@section('content')
+
+
     <form action="{{ URL('/create-schedule') }}" method="POST">
         @csrf
         <label for='title'>{{ __('title') }}</label>
@@ -50,6 +50,6 @@
 
         <input type="submit" value="Save" class="btn btn-success" />
     </form>
-@endsection
+
 
 </x-app-layout>

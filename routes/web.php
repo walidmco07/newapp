@@ -22,14 +22,14 @@ Route::get('/', function () {
 Route::get('/dashboard', [DashboardController::class, 'index'])->middleware(['auth'])->name('dashboard');
 
 // Start Full Calender=================================================================
-Route::get('fullcalender', [AddEventController::class, 'index']);
+
 Route::get('/events', [AddEventController::class, 'getEvents']);
 Route::get('/schedule/delete/{id}', [AddEventController::class, 'deleteEvent']);
 Route::post('/schedule/{id}', [AddEventController::class, 'update']);
 Route::post('/schedule/{id}/resize', [AddEventController::class, 'resize']);
 Route::get('/events/search', [AddEventController::class, 'search']);
 
-Route::view('add-schedule', 'schedule.add');
+Route::get('/add-event', [AddEventController::class, 'index'])->name('addEvent');
 Route::post('create-schedule', [AddEventController::class, 'create']);
 // End Full Calender=================================================================
 
