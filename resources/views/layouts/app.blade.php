@@ -36,7 +36,7 @@
     <div class="d-flex align-items-center justify-content-between">
     <a href="index.html" class="logo d-flex align-items-center">
         <img src="assets/img/logo.png" alt="">
-        <span class="d-none d-lg-block">Ecole Royale Du Materiel</span>
+        <span class="d-none d-lg-block">Ecole Royale Du Matériel</span>
     </a>
     <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
@@ -265,7 +265,7 @@
     <ul class="sidebar-nav" id="sidebar-nav">
 
     <li class="nav-item">
-        <a class="nav-link " href="index.html">
+        <a class="nav-link " href="">
         <i class="bi bi-grid"></i>
         <span>Dashboard</span>
         </a>
@@ -277,50 +277,137 @@
         </a>
         <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
         <li>
-            <a href="components-alerts.html">
+            <a href="">
             <i class="bi bi-circle"></i><span>secrétariat </span>
             </a>
         </li>
         <li >
-            <a  class="nav-link collapsed" data-bs-target="#components-nav1" aria-expanded="false" aria-controls="components-nav1" data-bs-toggle="collapse" href="#">
-            <i class="bi bi-circle"></i><span>Service Effectif </span><i class="bi bi-chevron-down ms-auto"></i>
+            <a  class="nav-link collapsed" data-bs-target="#components-nav1"  data-bs-toggle="collapse" href="#">
+            <i class="bi bi-circle"></i><span>Service Effectif </span><i style="font-size: 18px;" class="bi bi-chevron-down ms-auto"></i>
             </a>
-            <ul id="components-nav1" class="nav-content1 collapse " >
-                <li>
-                       <a href="components-badges.html">
-                         <i class="bi bi-circle"></i><span>Atelier Pieces Mat ODR et MDR</span>
-                       </a>
-                </li>
-                <li>
-                       <a href="components-badges.html">
-                         <i class="bi bi-circle"></i><span>Atelier Engagement/rengagement</span>
-                       </a>
-                </li>
-                <li>
-                       <a href="components-badges.html">
-                         <i class="bi bi-circle"></i><span>Atelier Pieces Periodique</span>
-                       </a>
-                </li>
-                <li>
-                       <a href="components-badges.html">
-                         <i class="bi bi-circle"></i><span>Atelier Dicipline generale</span>
-                       </a>
-                </li>
-            </ul>
+                <ul id="components-nav1" class="nav-content1 collapse " >
+                    <li>
+                        <a class="nav-link collapsed" data-bs-target="#components-nav2" aria-expanded="false" aria-controls="components-nav2" data-bs-toggle="collapse" href="#">
+                            <i class="bi bi-circle"></i><span>Atelier Pièces Mat ODR et MDR</span><i style="font-size: 18px;" class="bi bi-chevron-down ms-auto"></i>
+                        </a>
+                             <ul id="components-nav2" class="nav-content1 collapse " >
+                                <li>
+                                    <a href="">
+                                        <i class="bi bi-circle"></i><span>Demande de stage</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="bi bi-circle"></i><span>Fiche de renseignement</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="bi bi-circle"></i><span>Changement CIM échéance de péremption</span>
+                                    </a>
+                                </li>
+
+                             </ul>
+                    </li>
+                    <li>
+                        <a class="nav-link collapsed" data-bs-target="#components-nav3" aria-expanded="false" aria-controls="components-nav3" data-bs-toggle="collapse" href="#">
+                            <i class="bi bi-circle"></i><span>Atelier Engagement/réengagement</span><i style="font-size: 18px;" class="bi bi-chevron-down ms-auto"></i>
+                        </a>
+                        <ul id="components-nav3" class="nav-content1 collapse " >
+                                <li>
+                                    <a href="">
+                                        <i class="bi bi-circle"></i><span>Échéancier des réengagements</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="bi bi-circle"></i><span>Contrat d'engagement</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="bi bi-circle"></i><span>Contrat de réengagement</span>
+                                    </a>
+                                </li>
+                             </ul>
+
+                        
+                    </li>
+                    <li>
+                        <a class="nav-link collapsed" data-bs-target="#components-nav4" aria-expanded="false" aria-controls="components-nav4" data-bs-toggle="collapse" href="#">
+                            <i class="bi bi-circle"></i><span>Atelier Pièces Periodiques</span> <i style="font-size: 18px;" class="bi bi-chevron-down ms-auto"></i>
+                        </a>
+                        <ul id="components-nav4" class="nav-content1 collapse " >
+                                <li>
+                                    <a href="">
+                                        <i class="bi bi-circle"></i><span>Présence au corps</span>
+                                    </a>
+                                </li>
+                             </ul>
+                    </li>
+                    <li>
+                        <a class="nav-link collapsed" data-bs-target="#components-nav5" aria-expanded="false" aria-controls="components-nav5" data-bs-toggle="collapse" href="#">
+                            <i class="bi bi-circle"></i><span>Atelier discipline générale</span><i style="font-size: 18px;" class="bi bi-chevron-down ms-auto"></i>
+                        </a>
+                        <ul id="components-nav5" class="nav-content1 collapse " >
+                                <li>
+                                    <a href="">
+                                        <i class="bi bi-circle"></i><span>Atelier discipline générale</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="bi bi-circle"></i><span>Situation BMCA</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="bi bi-circle"></i><span>Diplômes militaires/Spécialités</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="bi bi-circle"></i><span>Feuille de note</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="bi bi-circle"></i><span>Décorations/Felicitations</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="bi bi-circle"></i><span>Situations patrimoniales</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="bi bi-circle"></i><span>Notations</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="bi bi-circle"></i><span>Instructions générales du personnel de l'ERM</span>
+                                    </a>
+                                </li>
+                             </ul>
+
+                    </li>
+                </ul>
 
         </li>
         <li>
-            <a href="components-badges.html">
-            <i class="bi bi-circle"></i><span>Service Details</span>
+            <a href="">
+            <i class="bi bi-circle"></i><span>Service Détails</span>
             </a>
         </li>
         <li>
-            <a href="components-breadcrumbs.html">
-            <i class="bi bi-circle"></i><span>Service materiels</span>
+            <a href="">
+            <i class="bi bi-circle"></i><span>Service matériel</span>
             </a>
         </li>
         <li>
-            <a href="components-buttons.html">
+            <a href="">
             <i class="bi bi-circle"></i><span>Service Ordinaire</span>
             </a>
         </li>
@@ -334,7 +421,7 @@
         </a>
         <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
         <li>
-            <a href="forms-elements.html">
+            <a href="">
             <i class="bi bi-circle"></i><span></span>
             </a>
         </li>
@@ -344,7 +431,7 @@
 
     <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
-        <i class="bi bi-layout-text-window-reverse"></i><span>Groupements Stagaires</span><i class="bi bi-chevron-down ms-auto"></i>
+        <i class="bi bi-layout-text-window-reverse"></i><span>Groupement Stagaires</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
         <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
         <li>
