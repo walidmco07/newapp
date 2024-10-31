@@ -12,7 +12,7 @@ class AddEventController extends Controller
     {
         return view('addEvent');
     }
-
+    
     public function create(Request $request)
     {
         $item = new Event();

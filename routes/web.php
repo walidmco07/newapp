@@ -19,6 +19,7 @@ Route::get('/', function () {
     return view('auth.login');
 });
 
+
 Route::get('/dashboard', [DashboardController::class, 'index'])->middleware(['auth'])->name('dashboard');
 
 // Start Full Calender=================================================================
@@ -32,5 +33,13 @@ Route::get('/events/search', [AddEventController::class, 'search']);
 Route::get('/add-event', [AddEventController::class, 'index'])->name('addEvent');
 Route::post('create-schedule', [AddEventController::class, 'create']);
 // End Full Calender=================================================================
+    
+
+
+// service effictifs
+Route::get('/s_Effectif', function () {
+    return view('Service_Effectif.Effectif');
+})->name('s_Effectif');
+
 
 require __DIR__.'/auth.php';
