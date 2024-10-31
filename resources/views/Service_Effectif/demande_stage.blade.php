@@ -92,9 +92,9 @@
                     <td>
                         <div class="action-buttons">
                         
-                            <a type="button" class="btn btn-success btn-sm" href="{{route('pdf_stage')}}">
+                            <button id="print" type="button" class="btn btn-success btn-sm">
                                 <i class="fas fa-download"></i> Imprimer
-                             </a>
+                            </button>
                             
                         </div>
                     </td>
@@ -103,5 +103,17 @@
         </table>
             
     </div>
+ 
+    <script>
+document.getElementById('print').addEventListener('click', function() {
+    var print = window.open();
+    print.location.href="{{route('pdf_stage')}}";
+    print.onload=function(){
+        print.print();
+      
+    };
+});
 
+
+</script>
 </x-app-layout>

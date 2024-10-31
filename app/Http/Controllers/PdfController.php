@@ -9,9 +9,8 @@ class PdfController extends Controller
     public function pdf_stage()
     {
       
-        // $pdf = Pdf::loadView('demande_stage', $data);
-        $pdf = Pdf::loadView('dashboard')->setOptions(['defaultFont' => 'sans-serif']);
-        return $pdf->download('demande_stage.pdf');
+        
+        return view ('Service_Effectif.Renseignements');
 
         
     }
