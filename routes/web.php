@@ -33,4 +33,11 @@ Route::get('/add-event', [AddEventController::class, 'index'])->name('addEvent')
 Route::post('create-schedule', [AddEventController::class, 'create']);
 // End Full Calender=================================================================
 
+
+
+Route::get('/demande_de_stage', function () {
+    return view('Service_Effectif.demande_stage');
+})->name('demande_stage');
+
+
 require __DIR__.'/auth.php';

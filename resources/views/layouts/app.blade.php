@@ -34,7 +34,7 @@
 <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
-    <a href="index.html" class="logo d-flex align-items-center">
+    <a href="" class="logo d-flex align-items-center">
         <img src="assets/img/logo.png" alt="">
         <span class="d-none d-lg-block">Ecole Royale Du Matériel</span>
     </a>
@@ -292,7 +292,7 @@
                         </a>
                              <ul id="components-nav2" class="nav-content1 collapse " >
                                 <li>
-                                    <a href="">
+                                    <a href="{{route('demande_stage')}}">
                                         <i class="bi bi-circle"></i><span>Demande de stage</span>
                                     </a>
                                 </li>
