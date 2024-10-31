@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\AddEventController;
+use App\Http\Controllers\PdfController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,6 +20,8 @@ Route::get('/', function () {
     return view('auth.login');
 });
 
+Route::get('/pdf_stage', [PdfController::class, 'pdf_stage'])->name('pdf_stage');;
+
 Route::get('/dashboard', [DashboardController::class, 'index'])->middleware(['auth'])->name('dashboard');
 
 // Start Full Calender=================================================================
@@ -32,6 +35,14 @@ Route::get('/events/search', [AddEventController::class, 'search']);
 Route::get('/add-event', [AddEventController::class, 'index'])->name('addEvent');
 Route::post('create-schedule', [AddEventController::class, 'create']);
 // End Full Calender=================================================================
+    
+
+
+// service effictifs
+Route::get('/s_Effectif', function () {
+    return view('Service_Effectif.Effectif');
+})->name('s_Effectif');
+
 
 
 

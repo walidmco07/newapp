@@ -34,7 +34,7 @@
 <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
-    <a href="" class="logo d-flex align-items-center">
+    <a href="{{ route('dashboard') }}" class="logo d-flex align-items-center">
         <img src="assets/img/logo.png" alt="">
         <span class="d-none d-lg-block">Ecole Royale Du Matériel</span>
     </a>
@@ -386,7 +386,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="">
+                                    <a href="{{ route('s_Effectif') }}">
                                         <i class="bi bi-circle"></i><span>Instructions générales du personnel de l'ERM</span>
                                     </a>
                                 </li>
