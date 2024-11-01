@@ -48,9 +48,9 @@
                   <div class="modal-content">
 
                     <!-- Modal Header -->
-                    <div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <div class="modal-header">
                       <h4 class="modal-title">Ajouter un événement</h4>
-                      
+                      <button type="button" class="btn-close" data-dismiss="modal"></button>
                     </div>
                     
                     <!-- Modal body -->

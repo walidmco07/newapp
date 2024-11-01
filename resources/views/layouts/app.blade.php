@@ -377,7 +377,7 @@
                                 </li>
                                 <li>
                                     <a href="">
-                                        <i class="bi bi-circle"></i><span>Situations patrimoniales</span>
+                                        <i class="bi bi-circle"></i><span>Situations matrimoniales</span>
                                     </a>
                                 </li>
                                 <li>

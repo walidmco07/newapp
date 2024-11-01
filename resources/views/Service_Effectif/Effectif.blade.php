@@ -115,6 +115,9 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="detailsModalLabel">Employee Details</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"></span>
+                </button>   
                 </div>
                 <div class="modal-body">
                 <table class="table table-bordered table-hover">
@@ -232,9 +235,7 @@
                 </table>
             </div>
                 <div class="modal-footer">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+                 
                 </div>
             </div>
         </div>
@@ -251,8 +252,8 @@
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Ajouter un organique</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"></span>
         </button>
       </div>
       <div class="modal-body">
@@ -353,7 +354,9 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="editModalLabel">Edit Employee</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"></span>
+        </button>
                 </div>
                 <div class="modal-body">
                     <form id="editForm">
@@ -396,8 +399,8 @@
                     <!-- Delete confirmation message -->
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+                  <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"></span>
                 </button>
                     <button type="button" class="btn btn-danger" onclick="confirmDelete()">Confirm Delete</button>
                 </div>
