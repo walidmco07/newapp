@@ -244,8 +244,6 @@
 
 
 <!-- Add Modal -->
-
-
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-xl" role="document">
     <div class="modal-content">
@@ -356,24 +354,86 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form id="editForm">
-                        <div class="mb-3">
-                            <label for="editFirstName" class="form-label">First Name</label>
-                            <input type="text" class="form-control" id="editFirstName" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="editLastName" class="form-label">Last Name</label>
-                            <input type="text" class="form-control" id="editLastName" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="editPosition" class="form-label">Position</label>
-                            <input type="text" class="form-control" id="editPosition" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="editTitle" class="form-label">Title</label>
-                            <input type="text" class="form-control" id="editTitle" required>
-                        </div>
-                    </form>
+                <form id="editForm">
+                    <div class="row">
+                    <div class="col-md-6 mb-3">
+                    <label for="number" class="form-label">N°</label>
+                    <input type="text" class="form-control" id="number" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                    <label for="firstName" class="form-label">Prénoms</label>
+                    <input type="text" class="form-control" id="firstName" required>
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-md-6 mb-3">
+                    <label for="lastName" class="form-label">Noms</label>
+                    <input type="text" class="form-control" id="lastName" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                    <label for="gdes" class="form-label">GDES</label>
+                    <input type="text" class="form-control" id="gdes" required>
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-md-6 mb-3">
+                    <label for="mles" class="form-label">MLES</label>
+                    <input type="text" class="form-control" id="mles" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                    <label for="birthDate" class="form-label">D.NAISS</label>
+                    <input type="date" class="form-control" id="birthDate" required>
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-md-6 mb-3">
+                    <label for="cin" class="form-label">N°CIN</label>
+                    <input type="text" class="form-control" id="cin" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                    <label for="sf" class="form-label">S.F</label>
+                    <input type="text" class="form-control" id="sf" required>
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-md-6 mb-3">
+                    <label for="ne" class="form-label">N.E</label>
+                    <input type="text" class="form-control" id="ne" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                    <label for="ti" class="form-label">T.I%</label>
+                    <input type="text" class="form-control" id="ti" required>
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-md-6 mb-3">
+                    <label for="diplomaMil" class="form-label">DIP.MIL</label>
+                    <input type="text" class="form-control" id="diplomaMil" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                    <label for="specialties" class="form-label">SPECIALITES</label>
+                    <input type="text" class="form-control" id="specialties" required>
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-md-6 mb-3">
+                    <label for="diplomaSchool" class="form-label">DIP.SCOL.</label>
+                    <input type="text" class="form-control" id="diplomaSchool" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                    <label for="employment" class="form-label">EMPLOI TENU</label>
+                    <input type="text" class="form-control" id="employment" required>
+                    </div>
+                    </div>
+                    <div class="mb-3">
+                    <label for="position" class="form-label">POSITION</label>
+                    <input type="text" class="form-control" id="position" required>
+                    </div>
+                    <div class="mb-3">
+                    <label for="title" class="form-label">Title</label>
+                    <input type="text" class="form-control" id="title" required>
+                    </div>
+                </form>
                 </div>
                 <div class="modal-footer">
                   <button  aria-hidden="true" type="button" class="close" data-dismiss="modal" aria-label="Close">
